@@ -2,6 +2,7 @@
 import os
 import shutil
 import pathlib
+from werkzeug.utils import secure_filename
 
 def cleanup(path):
     if os.path.isdir(path):
@@ -18,7 +19,7 @@ def createFile(path, file):
     else:
         return 1
 
-def createDir(path):
+def mkdir(path):
     if not os.path.exists(path):
         os.mkdir(path)
         return 0
