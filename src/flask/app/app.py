@@ -5,16 +5,15 @@ from flask import session
 import os
 import shutil
 from werkzeug.utils import secure_filename
-
+import requests
+import mimetypes
+import fsops
+import mail_analyzer
 
 app = Flask(__name__)
 app.secret_key = os.urandom(16)
-def cleanup(path)
-    if os.path.isdir(path):
-        shutil.rmtree(path)
-        return 0
-    else:
-        return 1
+
+
 
 
 
@@ -25,6 +24,8 @@ def upload_file():
         requestpath = "/tmp/" + requestid
         os.mkdir(requestpath) 
         f = requests.files['the_file']
-        fpath = requestidpath + "/" + secure_filename(f.filename)
-        f.save(fpath)
-        
+        fpath = requestpath + "/" + secure_filename(f.filename)
+        fsops.createFile(fpath)
+        mail_analyzer.analyze(fpath)
+
+
