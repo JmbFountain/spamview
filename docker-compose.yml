@@ -4,15 +4,20 @@ version: '3'
 services:
         webfrontend:
                 build: ./src/nginx/.
+                depends_on:
+                  - flask
                 restart: always
-                        - "flask"
+                links: 
+                  - "flask"
         flask:
                 build: ./src/flask/.
                 restart: always
+                depends_on:
+                  - selenium
                 links:
                         - "webfrontend"
                         - "selenium"
-                        - "carbon"
+                          # - "carbon"
         #carbon:
         #        build: ./src/carbon/.
         #        restart: always
@@ -20,8 +25,8 @@ services:
                 build: ./src/selenium/.
                 restart: always
                 links:
-                        - "flask"
+                  - "flask"
                 expose:
-                        - 4444
-                        - 7900
+                  - 4444
+                  - 7900
 
