@@ -7,6 +7,9 @@ from werkzeug.utils import secure_filename
 from argparse import ArgumentParser
 import selenium_handler
 
+# Set general assumptions on variables
+selenium = False
+
 def parsemail(file, directory):
     """
     parses an eml file and extracts its content
@@ -42,22 +45,25 @@ def get_body_links(file):
     return links
 
 
-def analyze(file):
+def analyze(file, directory, selenium):
     """
     runs the full analysis suite on the email file
     :param file: Path to file
+    :param directory: working directory
+    :param selenium: if True, try to get screenshots of URLs
     :return:
     """
     working_dir = fsops.parentPath(file)
     contentdir = working_dir + 'message_contents'
     imagedir = working_dir + 'screenshots'
     filetype = mimetypes.guess_type(file)
-    if filetype is not 'message/rfc822':
+    if filetype != 'message/rfc822':
         return "not a valid eml file"
     parsemail(file=file, directory=contentdir)
     fsops.mkdir(imagedir)
-    for link in get_body_links(file):
-        selenium_handler.getScreenshot(url=link, imagedir=imagedir)
+    if selenium == True:
+        for link in get_body_links(file):
+            selenium_handler.getScreenshot(url=link, imagedir=imagedir)
 
 
 
@@ -65,5 +71,7 @@ def analyze(file):
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('emlfile')
+    parser.add_argument('workdir')
+    parser.add_argument('')
     args = parser.parse_args()
     analyze(args.emlfile)

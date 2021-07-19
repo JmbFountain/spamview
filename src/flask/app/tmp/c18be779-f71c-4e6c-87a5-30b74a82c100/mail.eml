@@ -1,0 +1,116 @@
+From carolina.orrego@conectamp.cl Mon Aug 31 16:10:40 2020
+Return-Path: <carolina.orrego@conectamp.cl>
+Received: from vps-125135.conectamp.cl (SPIANTISPAM01.HSPI.local
+ [172.21.20.155]) by mail.siller.net with SMTP (version=TLS\Tls12
+ cipher=Aes256 bits=256); Mon, 31 Aug 2020 16:10:40 +0200
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (svnunknown) on
+	SPIANTISPAM01.HSPI.local
+X-Spam-Level: ****
+X-Spam-Status: No, score=4.3 required=10.0
+ tests=BAYES_50,BP_LARGE_FONT_SIZE,
+ DKIM_INVALID,DKIM_SIGNED,FORGED_MUA_MOZILLA,HTML_MESSAGE,
+ HTML_OBFUSCATE_05_10,RDNS_NONE,T_SPF_HELO_TEMPERROR,T_SPF_TEMPERROR
+ autolearn=no autolearn_force=no version=3.4.2
+Received: from vps-125135.conectamp.cl ([162.241.52.15]) by
+ SPIANTISPAM01.HSPI.local ([172.21.22.90],
+ envelope-sender=<carolina.orrego@conectamp.cl>) with ESMTPS (CleanMail
+ 5.8.2.3); Mon, 31 Aug 2020 16:08:32 +0200
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=conectamp.cl; s=default; h=Content-Type:MIME-Version:Date:Message-ID:
+ Subject:From:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=fxq1iQlWlozBzeAvWvmLaGFVvDwwtUYmYwxGOsOnnsg=;
+ b=NQIc23FWZkh0yoBi26COwt9aQq
+ zzRwdbk45XSYFrSH8GeFOtxOdMKZFEbYhNfFOwBbXllLB5aWR9n5uoEMqkqmxEd5kb3Wcq3Xax1rI
+ zy2RloLobKoi4/eb/uYfNeZ0JumVzlbsaDsRuULu4Se8uk7VYwvqbvJ+t/UnfYkUFyKdBf4cMz+zZ
+ ILqBWLleM7J8eNygTaQ9VujHt6m4cfUeMBZdJAsiSHEScKKcUOkcplfIACFauaEXC8zMZrGTTOryl
+ VQb1XmMLzL8ZXL+nrzKKJdLlhkF70VfmmX7uNA3/p1cNF/e6Rcbu/UZzxrN/npMUcSWv6KIYJ0JlC
+ ARt022nA==;
+Received: from [219.143.182.179] (port=17110 helo=ns2.conectamp.cl) by
+ vps-125135.conectamp.cl with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.93) (envelope-from
+ <carolina.orrego@conectamp.cl>) id 1kCkTg-00047x-OP; Mon, 31 Aug 2020
+ 10:08:11 -0400
+To: "Kristina Bachmayer" <kristinabachmayer@hotmail.de>, "morino98"
+ <morino98@web.de>, "moritz buehl" <moritz.buehl@googlemail.com>, "iris
+ buehl" <iris.buehl@arcor.de>, "sj buehler" <sj.buehler@freenet.de>, "jmb"
+ <jmb@smx.de>, "nadinebutz nb" <nadinebutz.nb@googlemail.com>
+From: m.drar <carolina.orrego@conectamp.cl>
+Subject: =?UTF-8?Q?Kaum_zu_glauben=2C_aber_wahr!?=
+Message-ID: <0EAECA01-D6BE-4C36-B4B0-5A221EF18BBF@conectamp.cl>
+Date: Mon, 31 Aug 2020 06:59:17 -0700
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101
+ PostboxApp/6.1.18
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----------83B598B90E4DBF9C3"
+Content-Language: en-US
+X-AntiAbuse: This header was added to track abuse, please include it with
+ any abuse report
+X-AntiAbuse: Primary Hostname - vps-125135.conectamp.cl
+X-AntiAbuse: Original Domain - smx.de
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - conectamp.cl
+X-Get-Message-Sender-Via: vps-125135.conectamp.cl: authenticated_id:
+ carolina.orrego@conectamp.cl
+X-Authenticated-Sender: vps-125135.conectamp.cl:
+ carolina.orrego@conectamp.cl
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-CleanMail-Result: Passed (ClamWin Antivirus)
+X-CleanMail-HeloName: vps-125135.conectamp.cl
+X-CleanMail-HostIP: 162.241.52.15
+X-CleanMail-MessageID: 5F4D046000040082
+X-CleanMail-Policy: unknown
+X-CleanMail-Port: Relay - 31.3.147.100
+X-SmarterMail-TotalSpamWeight: 0
+X-Evolution-Source: 35598300614e35e0f7d982f2a9682bb2abf00aee
+
+This is a multi-part message in MIME format.
+------------83B598B90E4DBF9C3
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+📌 Es ist schon ein paar Tage her. Geht es dir gut?
+
+https://bit.ly/2YKdnJZ
+
+NEWS:
+
+ 
+
+ 
+
+-- 
+Sent from Postbox <https://www.postbox-inc.com>
+
+------------83B598B90E4DBF9C3
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body
+ bgcolor="#FFFFFF" text="#000000">
+ <span style="color:#000013">💲 Es ist schon ein paar Tage her. Geht es dir gut?</span><br><br> 
+  <br>
+  
+  <span style="font-weight:100">https://bit.ly/2YKdnJZ</span><br>
+  <br>
+  
+  <span style="font-weight:102;color:#00009;"> N</span><span style="font-size:99.99850%;font-weight: 102">E</span><span style="font-size:99.967076%">W</span><span style="font-size:99.954949%;font-weight:107;color:#000023">S: </span><span style="font-size:99.962092%;font-weight: 106"></span><br><span style="color:#00009"></span><br><span style="font-size:99.985845%;font-weight: 101"></span>
+  <br>
+  
+  <br>
+  
+  <br>
+  <div class="moz-signature">-- <br>
+<div>Sent from <a href="https://www.postbox-inc.com"><span style="color:
+ rgb(0, 157, 247);">Postbox</span></a></div></div>
+</body>
+</html>
+
+------------83B598B90E4DBF9C3--
+

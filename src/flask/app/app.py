@@ -1,31 +1,32 @@
-from flask import Flask
-from flask import render_template
-from flask import request
-from flask import session
-import os
-import shutil
+from flask import Flask, render_template, make_response, request, session
+import uuid
 from werkzeug.utils import secure_filename
-import requests
-import mimetypes
+# import mimetypes
 import fsops
 import mail_analyzer
 
+
 app = Flask(__name__)
-app.secret_key = os.urandom(16)
+# app.secret_key = os.urandom(16)
 
 
+@app.route('/')
+def main():
+    resp = make_response(render_template("main.html"))
+    session_id = str(uuid.uuid4())
+    resp.set_cookie(key='session', value=session_id, samesite="strict")
+    return resp
 
 
-
-@app.route("/upload", methods=['POST'])
+@app.post("/uploademl")
 def upload_file():
-    if request.method == 'POST':
-        requestid = secure_filename(str(session))
-        requestpath = "/tmp/" + requestid
-        os.mkdir(requestpath) 
-        f = requests.files['the_file']
-        fpath = requestpath + "/" + secure_filename(f.filename)
-        fsops.createFile(fpath)
-        mail_analyzer.analyze(fpath)
+    requestid = secure_filename(request.cookies['session'])
+    requestpath = "tmp/" + requestid
+    fsops.mkdir(requestpath)
+    f = request.files['file']
+    fpath = requestpath + "/mail.eml"
+    f.save(fpath)
+    mail_analyzer.analyze(fpath)
+    return render_template("analyzing.html")
 
 
