@@ -28,5 +28,3 @@ def upload_file():
     f.save(fpath)
     mail_analyzer.analyze(fpath)
     return render_template("analyzing.html")
-
-

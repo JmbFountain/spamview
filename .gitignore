@@ -1,4 +1,6 @@
 .idea
-/src/flask/tmp/*
+__pycache__
+src/flask/app/__pycache__
+src/flask/tmp/*
 *.swp
 venv/

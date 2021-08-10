@@ -6,14 +6,17 @@ import fsops
 from werkzeug.utils import secure_filename
 from argparse import ArgumentParser
 import selenium_handler
+from oletools.olevba import VBA_Parser
 
 # Set general assumptions on variables
 selenium = False
+
 
 def parsemail(file, directory):
     """
     parses an eml file and extracts its content
     :param file: path to eml file
+    :param directory: work directory for parser
     :return:
     """
 
@@ -45,6 +48,18 @@ def get_body_links(file):
     return links
 
 
+def office_file_analysis(directory):
+    """
+    :param directory: directory that contains the files to be analyzed
+    :return:
+    """
+    returnstr = ""
+    for file in fsops.getChildFiles(directory):
+        try:
+            vba_parser = VBA_Parser()
+        except: (OlevbaBaseException): returnstr = returnstr + "cannot parse " + file + "\n"
+
+
 def analyze(file, directory, selenium):
     """
     runs the full analysis suite on the email file
@@ -61,7 +76,7 @@ def analyze(file, directory, selenium):
         return "not a valid eml file"
     parsemail(file=file, directory=contentdir)
     fsops.mkdir(imagedir)
-    if selenium == True:
+    if selenium:
         for link in get_body_links(file):
             selenium_handler.getScreenshot(url=link, imagedir=imagedir)
 
